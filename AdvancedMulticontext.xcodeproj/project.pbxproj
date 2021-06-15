@@ -14,6 +14,11 @@
 		6ED4B26E2677321900982F5D /* AdvancedMulticontext.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4B26C2677321900982F5D /* AdvancedMulticontext.xcdatamodeld */; };
 		6ED4B2702677321B00982F5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED4B26F2677321B00982F5D /* Assets.xcassets */; };
 		6ED4B2732677321B00982F5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ED4B2712677321B00982F5D /* LaunchScreen.storyboard */; };
+		6ED4B27C267732FF00982F5D /* MultiContextCoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4B27A267732FF00982F5D /* MultiContextCoreData+CoreDataClass.swift */; };
+		6ED4B27D267732FF00982F5D /* MultiContextCoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4B27B267732FF00982F5D /* MultiContextCoreData+CoreDataProperties.swift */; };
+		6ED4B27F267738BC00982F5D /* DemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4B27E267738BC00982F5D /* DemoCell.swift */; };
+		6ED4B28426773AE700982F5D /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4B28326773AE700982F5D /* ApiCall.swift */; };
+		6ED4B28726773B4200982F5D /* HelperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED4B28626773B4200982F5D /* HelperClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		6ED4B26F2677321B00982F5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ED4B2722677321B00982F5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6ED4B2742677321B00982F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ED4B27A267732FF00982F5D /* MultiContextCoreData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MultiContextCoreData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6ED4B27B267732FF00982F5D /* MultiContextCoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MultiContextCoreData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6ED4B27E267738BC00982F5D /* DemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCell.swift; sourceTree = "<group>"; };
+		6ED4B28326773AE700982F5D /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
+		6ED4B28626773B4200982F5D /* HelperClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,9 @@
 		6ED4B2572677321900982F5D = {
 			isa = PBXGroup;
 			children = (
+				6ED4B28526773B2B00982F5D /* Helper */,
+				6ED4B28226773AC400982F5D /* Api */,
+				6ED4B28026773A7F00982F5D /* MultiContextCoreData */,
 				6ED4B2622677321900982F5D /* AdvancedMulticontext */,
 				6ED4B2612677321900982F5D /* Products */,
 			);
@@ -66,8 +79,34 @@
 				6ED4B2712677321B00982F5D /* LaunchScreen.storyboard */,
 				6ED4B2742677321B00982F5D /* Info.plist */,
 				6ED4B26C2677321900982F5D /* AdvancedMulticontext.xcdatamodeld */,
+				6ED4B27E267738BC00982F5D /* DemoCell.swift */,
 			);
 			path = AdvancedMulticontext;
+			sourceTree = "<group>";
+		};
+		6ED4B28026773A7F00982F5D /* MultiContextCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6ED4B27A267732FF00982F5D /* MultiContextCoreData+CoreDataClass.swift */,
+				6ED4B27B267732FF00982F5D /* MultiContextCoreData+CoreDataProperties.swift */,
+			);
+			path = MultiContextCoreData;
+			sourceTree = "<group>";
+		};
+		6ED4B28226773AC400982F5D /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				6ED4B28326773AE700982F5D /* ApiCall.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		6ED4B28526773B2B00982F5D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				6ED4B28626773B4200982F5D /* HelperClass.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +180,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ED4B2682677321900982F5D /* ViewController.swift in Sources */,
+				6ED4B27F267738BC00982F5D /* DemoCell.swift in Sources */,
 				6ED4B26E2677321900982F5D /* AdvancedMulticontext.xcdatamodeld in Sources */,
+				6ED4B28726773B4200982F5D /* HelperClass.swift in Sources */,
+				6ED4B27D267732FF00982F5D /* MultiContextCoreData+CoreDataProperties.swift in Sources */,
 				6ED4B2642677321900982F5D /* AppDelegate.swift in Sources */,
+				6ED4B27C267732FF00982F5D /* MultiContextCoreData+CoreDataClass.swift in Sources */,
+				6ED4B28426773AE700982F5D /* ApiCall.swift in Sources */,
 				6ED4B2662677321900982F5D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
